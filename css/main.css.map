@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/Helpers/_mixin.scss",
+        "../scss/Helpers/_variables.scss",
+        "../scss/Base/_reset.scss",
+        "../scss/Components/_button.scss",
+        "../scss/Components/_card.scss",
+        "../scss/Components/_dropdown.scss",
+        "../scss/Components/_input.scss",
+        "../scss/Layouts/_carousel.scss",
+        "../scss/Layouts/_footer.scss",
+        "../scss/Layouts/_header.scss",
+        "../scss/Layouts/_info.scss",
+        "../scss/Layouts/_register.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
