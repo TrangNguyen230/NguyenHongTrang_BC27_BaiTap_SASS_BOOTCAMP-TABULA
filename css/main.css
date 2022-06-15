@@ -1,1 +1,79 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  font-family: 'Roboto', sans-serif;
+}
+
+header button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #b61984;
+  background-color: #b61984;
+  padding: 8px 20px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+header button:hover {
+  color: #b61984;
+  background-color: #fff;
+}
+
+header .menu {
+  z-index: 1;
+}
+
+header .link a {
+  margin-right: 50px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+}
+
+header .link a::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  background-color: #b61984;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  left: 40%;
+  top: 10px;
+}
+
+header .link a:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header .brand a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #181818;
+  margin-right: 5px;
+}
+
+header .brand a:hover {
+  color: #b61984;
+}
+
+header {
+  background-image: url(./../../img/yellow_top_wave_01.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+/*# sourceMappingURL=main.css.map */

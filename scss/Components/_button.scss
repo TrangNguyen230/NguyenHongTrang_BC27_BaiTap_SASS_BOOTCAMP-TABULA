@@ -1,0 +1,13 @@
+header {
+   button{
+    @include styleText($fs-2, $fw-2, $color-white);
+    border: $bd-1 solid $color-purple-1;
+    background-color: $color-purple-1;
+    padding: 8px 20px;
+    transition: 0.3s linear;
+
+    &:hover{
+        @include buttonHover($color-purple-1, $color-white);
+    }
+   } 
+}

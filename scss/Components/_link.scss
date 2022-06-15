@@ -1,0 +1,41 @@
+header {
+    .menu {
+        z-index: 1;
+    }
+
+    .link a {
+        margin-right: 50px;
+
+        display: inline-block;
+
+        @include styleText($fs-1, $fw-2, $color-black );
+
+        &::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            display: block;
+            border-radius: 50%;
+            background-color: $color-purple-1;
+            transform: scale(0);
+            transition: 0.2s ease-in-out;
+            position: relative;
+            left: 40%;
+            top: 10px;
+        }
+
+        &:hover {
+            &::after {
+                transform: scale(1);
+            }
+        }
+    }
+
+    .brand a{
+        @include styleText($fs-2, $fw-1, $color-black );
+        margin-right: 5px;
+        &:hover{
+          color: $color-purple-1;  
+        }
+    }
+}
