@@ -1,0 +1,7 @@
+.register{
+    background-image: url(./../../img/accent_bottom_wave_01.png);
+    @include styleBackground (bottom  center, no-repeat, cover);
+    .item-left{
+       
+    }
+}

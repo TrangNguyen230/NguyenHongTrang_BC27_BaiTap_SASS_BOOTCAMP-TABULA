@@ -1,0 +1,57 @@
+.register {
+  .card {
+    width: 75%;
+    input {
+      padding: 10px 10px 10px 40px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      width: 100%;
+      font-family: "Roboto", sans-serif;
+      font-size: $fs-6;
+      transition: 0.2s linear;
+      &:focus-visible {
+        outline: none;
+      }
+      &:focus {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+      }
+    }
+    select {
+      @extend input;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    textarea {
+      @extend input;
+      border-radius: $round-1;
+    }
+
+    i {
+      position: relative;
+      top: 32px;
+      left: 15px;
+      color: $color-purple-1;
+    }
+  }
+}
+
+footer {
+  input {
+    color: $color-white;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid $color-purple-1;
+    width: 80%;
+    font-family: "Roboto", sans-serif;
+    font-size: $fs-2;
+    background-color: $color-purple-3;
+    transition: 0.2s linear;
+    &:focus-visible {
+      outline: none;
+    }
+    &:focus {
+      border: 1px solid $color-white;
+    }
+  }
+  ::placeholder{
+    color: $color-white;
+  }
+}

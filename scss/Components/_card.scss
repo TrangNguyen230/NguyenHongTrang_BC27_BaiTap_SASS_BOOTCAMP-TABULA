@@ -1,0 +1,49 @@
+.info {
+    .card {
+        border-radius: $round-1;
+        transition: 0.3s linear;
+        border: transparent;
+
+        &:hover {
+            box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+        }
+
+        .card-image {
+            overflow: hidden;
+            border-top-left-radius: $round-1;
+            border-top-right-radius: $round-1;
+            
+            .card-img-top{
+                transition: all 0.4s linear;  
+            }
+
+            &:hover .card-img-top {
+                transition: all 0.4s linear;
+                transform: scale(1.1);
+            }
+        }
+
+        .card-body {
+            h4 {
+                @include styleText($fs-6, $fw-2, $color-purple-1)
+            }
+
+            p {
+                @include styleText($fs-7, $fw-3, $color-black)
+            }
+
+        }
+    }
+}
+
+.register{
+    .card{
+        border-radius: $round-1;
+        border: transparent;
+        box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.1);
+        h4{
+            @include styleText($fs-9, $fw-3, $color-black)
+        }
+    }
+   
+}

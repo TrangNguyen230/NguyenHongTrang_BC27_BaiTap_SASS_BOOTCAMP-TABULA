@@ -1,6 +1,15 @@
 header {
     background-image: url(./../../img/yellow_top_wave_01.png);
-    background-position:top;
-    background-repeat: no-repeat;
+    @include styleBackground(top, no-repeat, contain);
     height: 350px;
+
+    .menu {
+        position: fixed;
+        z-index: 1;
+        margin-left: 20%;
+        .link {
+            margin-left: 30px;
+        }
+    }
+
 }

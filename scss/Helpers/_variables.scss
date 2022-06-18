@@ -1,6 +1,9 @@
 // color
 $color-purple-1: #b61984;
 $color-purple-2: #dcd1f3;
+$color-purple-3: #aa017e;
+$color-purple-4: #990171;
+$color-purple-5: #e5b2d8;
 $color-black: #181818;
 $color-white: #fff;
 
@@ -9,11 +12,11 @@ $color-white: #fff;
  $fs-2: 0.9rem;
  $fs-3: 1.25em;
  $fs-4: 1.1rem;
- $fs-4: 3.8rem;
- $fs-4: 0.75rem;
-$fs-5: 1.55rem;
-$fs-6: 15px;
-$fs-7: 2.5rem;
+ $fs-5: 3.8rem;
+ $fs-6: 0.75rem;
+$fs-7: 1.55rem;
+$fs-8: 15px;
+$fs-9: 2.5rem;
 
 //font weight
 $fw-1: 400;
@@ -23,14 +26,13 @@ $fw-3: 700;
 // Border
 $bd-1: 1px;
 
+// Border radius
+$round-1: 10px;
+
 //break points
 $breakpoints: (
     "extra-large": 1200px,
     "large": 992px,
     "medium": 768px,
     "small": 576px,
-    "extra-large-down": 1199.98px,
-    "large-down": 991.98px,
-    "medium-down": 767.98px,
-    "small-down": 575.98px,
 );

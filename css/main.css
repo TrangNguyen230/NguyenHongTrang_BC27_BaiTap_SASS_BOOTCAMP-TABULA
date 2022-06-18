@@ -1,5 +1,7 @@
 * {
   font-family: 'Montserrat', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -8,6 +10,7 @@ a {
 
 span {
   font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 
 header button {
@@ -26,8 +29,167 @@ header button:hover {
   background-color: #fff;
 }
 
-header .menu {
-  z-index: 1;
+.register button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #b61984;
+  background-color: #b61984;
+  padding: 15px 60px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.register button:hover {
+  color: #b61984;
+  background-color: #fff;
+}
+
+footer button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #181818;
+  border: 1px solid #fff;
+  background-color: #fff;
+  padding: 8px 20px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  width: 80%;
+  margin-top: 30px;
+}
+
+footer button:hover {
+  color: #fff;
+  background-color: #b61984;
+}
+
+.info .card {
+  border-radius: 10px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  border: transparent;
+}
+
+.info .card:hover {
+  -webkit-box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+
+.info .card .card-image {
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info .card .card-image .card-img-top {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.info .card .card-image:hover .card-img-top {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.info .card .card-body h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b61984;
+}
+
+.info .card .card-body p {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #181818;
+}
+
+.register .card {
+  border-radius: 10px;
+  border: transparent;
+  -webkit-box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.register .card h4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #181818;
+}
+
+.register .card {
+  width: 75%;
+}
+
+.register .card input, .register .card select, .register .card textarea {
+  padding: 10px 10px 10px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.register .card input:focus-visible, .register .card select:focus-visible, .register .card textarea:focus-visible {
+  outline: none;
+}
+
+.register .card input:focus, .register .card select:focus, .register .card textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.register .card select {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.register .card textarea {
+  border-radius: 10px;
+}
+
+.register .card i {
+  position: relative;
+  top: 32px;
+  left: 15px;
+  color: #b61984;
+}
+
+footer input, footer .register .card select, .register .card footer select, footer .register .card textarea, .register .card footer textarea {
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #b61984;
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  background-color: #aa017e;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+footer input:focus-visible, footer .register .card select:focus-visible, .register .card footer select:focus-visible, footer .register .card textarea:focus-visible, .register .card footer textarea:focus-visible {
+  outline: none;
+}
+
+footer input:focus, footer .register .card select:focus, .register .card footer select:focus, footer .register .card textarea:focus, .register .card footer textarea:focus {
+  border: 1px solid #fff;
+}
+
+footer ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+footer :-ms-input-placeholder {
+  color: #fff;
+}
+
+footer ::-ms-input-placeholder {
+  color: #fff;
+}
+
+footer ::placeholder {
+  color: #fff;
 }
 
 header .link a {
@@ -70,10 +232,143 @@ header .brand a:hover {
   color: #b61984;
 }
 
+footer .item .footer-brand a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  margin-right: 10px;
+}
+
+footer .item .footer-brand a:hover i {
+  color: #181818;
+}
+
+.carousel {
+  width: 100%;
+  height: 405px;
+  background-image: url(./../../img/Violet_top_left_wave.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.carousel .container {
+  position: relative;
+}
+
+.carousel .container .content {
+  width: 100%;
+  position: absolute;
+  top: -310px;
+  left: 0;
+}
+
+.carousel .container .content .row {
+  height: 600px;
+}
+
+.carousel .container .content .row h1 {
+  margin-top: 30%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+}
+
+.carousel .container .content .row p {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #181818;
+}
+
+.carousel .container .content .carousel-img {
+  background-image: url(./../../img/hero_team.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer {
+  background: url(./../../img/footer_background.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #aa017e;
+  color: #fff;
+  padding: 150px 0;
+}
+
+footer .container {
+  margin-bottom: 150px;
+}
+
+footer h4 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+footer .item {
+  margin-top: 20px;
+  line-height: 32px;
+}
+
+footer .item .fa-solid {
+  font-size: 0.9rem;
+}
+
+footer .item .footer-contact span {
+  margin-left: 5px;
+}
+
+footer .item .footer-brand {
+  margin-top: 20px;
+}
+
+footer .footer-link {
+  line-height: 40px;
+}
+
+footer .footer-link span {
+  display: block;
+  width: 80%;
+  border-bottom: 1px solid #990171;
+}
+
+footer .footer-link span:hover {
+  cursor: pointer;
+  color: #e5b2d8;
+}
+
 header {
   background-image: url(./../../img/yellow_top_wave_01.png);
   background-position: top;
   background-repeat: no-repeat;
+  background-size: contain;
   height: 350px;
+}
+
+header .menu {
+  position: fixed;
+  z-index: 1;
+  margin-left: 20%;
+}
+
+header .menu .link {
+  margin-left: 30px;
+}
+
+.info {
+  background-color: #dcd1f3;
+  background-image: url(./../../img/Wave_White_bottom_right_shape_01.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.register {
+  background-image: url(./../../img/accent_bottom_wave_01.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */

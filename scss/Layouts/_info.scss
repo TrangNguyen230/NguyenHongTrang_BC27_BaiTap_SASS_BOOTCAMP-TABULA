@@ -1,0 +1,5 @@
+.info{
+    background-color: $color-purple-2;
+    background-image: url(./../../img/Wave_White_bottom_right_shape_01.png);
+    @include styleBackground(bottom center, no-repeat, contain)
+}

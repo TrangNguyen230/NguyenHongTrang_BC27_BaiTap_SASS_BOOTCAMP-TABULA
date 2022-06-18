@@ -1,7 +1,4 @@
 header {
-    .menu {
-        z-index: 1;
-    }
 
     .link a {
         margin-right: 50px;
@@ -38,4 +35,14 @@ header {
           color: $color-purple-1;  
         }
     }
+}
+
+footer{
+    .item .footer-brand a {
+        @include styleText($fs-2, $fw-1, $color-white);
+        margin-right: 10px ;
+        &:hover i{
+            color: $color-black;
+        }
+      }
 }

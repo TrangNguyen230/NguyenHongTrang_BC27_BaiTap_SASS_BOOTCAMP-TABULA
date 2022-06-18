@@ -1,13 +1,42 @@
 header {
-   button{
+  button {
     @include styleText($fs-2, $fw-2, $color-white);
     border: $bd-1 solid $color-purple-1;
     background-color: $color-purple-1;
     padding: 8px 20px;
     transition: 0.3s linear;
 
-    &:hover{
-        @include buttonHover($color-purple-1, $color-white);
+    &:hover {
+      @include buttonHover($color-purple-1, $color-white);
     }
-   } 
+  }
+}
+
+.register {
+  button {
+    @include styleText($fs-2, $fw-2, $color-white);
+    border: $bd-1 solid $color-purple-1;
+    background-color: $color-purple-1;
+    padding: 15px 60px;
+    transition: 0.3s linear;
+
+    &:hover {
+      @include buttonHover($color-purple-1, $color-white);
+    }
+  }
+}
+
+footer {
+  button {
+    @include styleText($fs-2, $fw-2, $color-black);
+    border: $bd-1 solid $color-white;
+    background-color: $color-white;
+    padding: 8px 20px;
+    transition: 0.3s linear;
+    width: 80%;
+    margin-top: 30px;
+    &:hover {
+        @include buttonHover($color-white, $color-purple-1);
+      }
+  }
 }
