@@ -1,0 +1,51 @@
+header {
+  .dropdown-content {
+    @include styleText($fs-6, $fw-2, $color-black );
+    font-family: "Montserrat", sans-serif;
+    display: none;
+    padding-right: 20px;
+    position: absolute;
+    right: -200%;
+    top: 30px;
+    background-color: $color-white;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .3);
+    min-width: 800px;
+    z-index: 1;
+    transition: all 0.3s linear;
+
+    & a{
+      font-family: "Montserrat", sans-serif;
+      color: $color-black;
+      padding: 12px 0;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+      &:hover{
+        font-family: "Montserrat", sans-serif;
+        color: $color-purple-1;
+      }
+    }
+
+    & .underline{
+      border-bottom: 2px solid $color-purple-1;
+    }
+  }
+
+  .dropdown-content-2{
+    @extend .dropdown-content;
+    min-width: max-content;
+    left: 10px;
+  }
+
+  .underline2{
+    border: none !important;
+  }
+
+
+  .dropdown:hover .dropdown-content {
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    transition: all 0.3s linear;
+  }
+}

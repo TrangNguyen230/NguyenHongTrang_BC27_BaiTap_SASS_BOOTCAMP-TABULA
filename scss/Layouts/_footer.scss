@@ -1,11 +1,11 @@
 footer {
-    background: url(./../../img/footer_background.jpg);
-    @include styleBackground(bottom center, no-repeat, cover);
+  background: url(./../../img/footer_background.jpg);
+  @include styleBackground(bottom center, no-repeat, cover);
   background-color: $color-purple-3;
   color: $color-white;
   padding: 150px 0;
-  .container{
-      margin-bottom: 150px;
+  .container {
+    margin-bottom: 150px;
   }
   h4 {
     @include styleText($fs-7, $fw-3, $color-white);
@@ -13,32 +13,30 @@ footer {
   .item {
     margin-top: 20px;
     line-height: 32px;
-    .fa-solid{
-        font-size: $fs-2
+    .fa-solid {
+      font-size: $fs-2;
     }
-    .footer-contact{
-        span{
-            margin-left:5px
-        }
-    }
-    .footer-brand{
-        margin-top: 20px
-    }
-  }
-
-  .footer-link{
-      line-height: 40px;
-      span{
-          display: block;
-          width: 80%;
-          border-bottom: 1px solid $color-purple-4;
-          
-          &:hover{
-              cursor: pointer;
-              color: $color-purple-5;
-          }
+    .footer-contact {
+      span {
+        margin-left: 5px;
       }
+    }
+    .footer-brand {
+      margin-top: 20px;
+    }
   }
 
+  .footer-link {
+    line-height: 40px;
+    span {
+      display: block;
+      width: 80%;
+      border-bottom: 1px solid $color-purple-4;
 
+      &:hover {
+        cursor: pointer;
+        color: $color-purple-5;
+      }
+    }
+  }
 }
