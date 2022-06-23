@@ -122,7 +122,11 @@ footer button:hover {
   color: #181818;
 }
 
-header .dropdown-content, header .dropdown-content-2 {
+header .dropdown {
+  height: 60px;
+}
+
+header .dropdown .dropdown-content, header .dropdown .dropdown-content-2 {
   font-size: 0.75rem;
   font-weight: 600;
   color: #181818;
@@ -130,8 +134,8 @@ header .dropdown-content, header .dropdown-content-2 {
   display: none;
   padding-right: 20px;
   position: absolute;
-  right: -200%;
-  top: 30px;
+  right: -300%;
+  top: 60px;
   background-color: #fff;
   -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
@@ -141,7 +145,7 @@ header .dropdown-content, header .dropdown-content-2 {
   transition: all 0.3s linear;
 }
 
-header .dropdown-content a, header .dropdown-content-2 a {
+header .dropdown .dropdown-content a, header .dropdown .dropdown-content-2 a {
   font-family: "Montserrat", sans-serif;
   color: #181818;
   padding: 12px 0;
@@ -150,19 +154,19 @@ header .dropdown-content a, header .dropdown-content-2 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-header .dropdown-content a:hover, header .dropdown-content-2 a:hover {
+header .dropdown .dropdown-content a:hover, header .dropdown .dropdown-content-2 a:hover {
   font-family: "Montserrat", sans-serif;
   color: #b61984;
 }
 
-header .dropdown-content .underline, header .dropdown-content-2 .underline {
+header .dropdown .dropdown-content .underline, header .dropdown .dropdown-content-2 .underline {
   border-bottom: 2px solid #b61984;
 }
 
 header .dropdown-content-2 {
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
+  min-width: -webkit-max-content !important;
+  min-width: -moz-max-content !important;
+  min-width: max-content !important;
   left: 10px;
 }
 
@@ -272,7 +276,7 @@ header .link .dropdown-link::after {
   transition: 0.2s ease-in-out;
   position: relative;
   left: 40%;
-  top: 10px;
+  top: 20px;
   z-index: 2;
 }
 
