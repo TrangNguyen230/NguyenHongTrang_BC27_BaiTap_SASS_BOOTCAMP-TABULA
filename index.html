@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Our Team</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -37,17 +37,52 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="white-div hide" id="topDiv"> </div>
+    <div class="white-div hide" id="topDiv"></div>
     <!--Header-->
     <header>
       <div class="container">
         <div class="header-bar d-flex justify-content-between">
-          <div class="header-img w-25">
-            <a href="#"><img src="./img/crest.png" alt="" /></a>
+          <div class="header-img w-25 d-flex">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            >
+              <i class="fa-solid fa-bars opacity-0 col-6"></i>
+            </button>
+            <a href="#" class="col-6"><img src="./img/crest.png" alt="" /></a>
           </div>
-          <div class="menu row w-75 flex-nowrap" >
-            <div class="link col-6 pt-4">
-              <div class="dropdown d-inline-block">
+          <!--Off canvas-->
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                Backdrop with scrolling
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                Try scrolling the rest of the page to see this option in action.
+              </p>
+            </div>
+          </div>
+          <!-------------->
+          <div class="menu row flex-nowrap">
+            <div class="link col-6 pt-4 d-flex flex-nowrap">
+              <div class="dropdown col-2">
                 <a class="dropdown-link" href="#">Home</a>
                 <div class="dropdown-content">
                   <div class="row">
@@ -102,26 +137,26 @@
                 </div>
               </div>
 
-              <div class="dropdown d-inline-block">
+              <div class="dropdown col-2">
                 <a class="dropdown-link" href="#">About</a>
                 <div class="dropdown-content-2">
                   <ul>
-                    <li><a href="#" >About us</a></li>
-                    <li><a href="#" >About me</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">About me</a></li>
                     <li>
-                      <a href="#" >Our team</a>
+                      <a href="#">Our team</a>
                     </li>
                     <li>
-                      <a href="#" >History</a>
+                      <a href="#">History</a>
                     </li>
                     <li>
-                      <a href="#" >Testimonial</a>
+                      <a href="#">Testimonial</a>
                     </li>
                     <li>
-                      <a href="#" >Contact</a>
+                      <a href="#">Contact</a>
                     </li>
                     <li>
-                      <a href="#" >Coming soon</a>
+                      <a href="#">Coming soon</a>
                     </li>
                     <li>
                       <a href="#" class="underline2">404</a>
@@ -130,20 +165,20 @@
                 </div>
               </div>
 
-              <div class="dropdown d-inline-block">
+              <div class="dropdown col-2">
                 <a class="dropdown-link" href="#">Courses</a>
                 <div class="dropdown-content-2">
                   <ul>
-                    <li><a href="#" >Courses</a></li>
-                    <li><a href="#" >Single Courses</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Single Courses</a></li>
                     <li>
-                      <a href="#" >Schedule</a>
+                      <a href="#">Schedule</a>
                     </li>
                     <li>
-                      <a href="#" >Workshop</a>
+                      <a href="#">Workshop</a>
                     </li>
                     <li>
-                      <a href="#" >Workshops & Events</a>
+                      <a href="#">Workshops & Events</a>
                     </li>
                     <li>
                       <a href="#" class="underline2">Get Quote</a>
@@ -152,20 +187,20 @@
                 </div>
               </div>
 
-              <div class="dropdown d-inline-block">
+              <div class="dropdown col-2">
                 <a class="dropdown-link" href="#">Blog</a>
                 <div class="dropdown-content-2">
                   <ul>
-                    <li><a href="#" >Standard view</a></li>
-                    <li><a href="#" >Column view</a></li>
+                    <li><a href="#">Standard view</a></li>
+                    <li><a href="#">Column view</a></li>
                     <li>
-                      <a href="#" >Simple view</a>
+                      <a href="#">Simple view</a>
                     </li>
                     <li>
-                      <a href="#" >Grid view</a>
+                      <a href="#">Grid view</a>
                     </li>
                     <li>
-                      <a href="#" >Single Post</a>
+                      <a href="#">Single Post</a>
                     </li>
                     <li>
                       <a href="#" class="underline2">Galleries</a>
@@ -174,14 +209,14 @@
                 </div>
               </div>
 
-              <div class="dropdown d-inline-block">
+              <div class="dropdown col-2">
                 <a class="dropdown-link" href="#">Shop</a>
                 <div class="dropdown-content-2">
                   <ul>
-                    <li><a href="#" >Product</a></li>
-                    <li><a href="#" >Card</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Card</a></li>
                     <li>
-                      <a href="#" >Checkout</a>
+                      <a href="#">Checkout</a>
                     </li>
                     <li>
                       <a href="#" class="underline2">My Account</a>
@@ -190,8 +225,7 @@
                 </div>
               </div>
 
-
-              <div class="dropdown d-inline-block">
+              <div class="dropdown col-2">
                 <a class="dropdown-link" href="#">Elements</a>
                 <div class="dropdown-content">
                   <div class="row">
@@ -234,7 +268,9 @@
                           <a href="#">Card & Event</a>
                         </li>
                         <li>
-                          <a href="#" class="underline2">Schedule & Step Line</a>
+                          <a href="#" class="underline2"
+                            >Schedule & Step Line</a
+                          >
                         </li>
                       </ul>
                     </div>
@@ -296,12 +332,12 @@
       <div class="container">
         <div class="content">
           <div class="row">
-            <div class="col-6">
+            <div class="title col-lg-6 col-md-12 col-sm-12">
               <h1>ABOUT US</h1>
               <p>The language teaching expert</p>
             </div>
 
-            <div class="carousel-img col-6"></div>
+            <div class="carousel-img col-lg-6 col-md-12 col-sm-12"></div>
           </div>
         </div>
       </div>
@@ -311,7 +347,7 @@
     <section class="info mb-5">
       <div class="container">
         <div class="row pt-4">
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card text-start pb-3 mt-5 mx-3">
               <div class="card-image">
                 <img
@@ -331,7 +367,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card text-start pb-3 mt-5 mx-3">
               <div class="card-image">
                 <img
@@ -348,7 +384,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card text-start pb-3 mt-5 mx-3">
               <div class="card-image">
                 <img
@@ -368,7 +404,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card text-start pb-3 mt-5 mx-3">
               <div class="card-image">
                 <img
@@ -388,7 +424,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card text-start pb-3 mt-5 mx-3">
               <div class="card-image">
                 <img
@@ -405,7 +441,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card text-start pb-3 mt-5 mx-3">
               <div class="card-image">
                 <img
@@ -421,7 +457,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card text-start pb-3 mt-5 mx-3">
               <div class="card-image">
                 <img class="card-img-top" src="./img/teacher_7.jpg" />
@@ -436,7 +472,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card text-start pb-3 mt-5 mx-3">
               <div class="card-image">
                 <img
@@ -462,13 +498,13 @@
     <section class="register pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-lg-6 col-sm-12">
             <div class="item-left">
               <img src="./img/conatct_inner.png" alt="" />
             </div>
           </div>
 
-          <div class="col-6">
+          <div class="col-lg-6 col-sm-12">
             <div class="item-right">
               <div class="card py-5 px-4">
                 <div class="card-body">
@@ -529,7 +565,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <h4>Contact us</h4>
             <div class="item">
               <div class="footer-contact">
@@ -564,7 +600,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <h4>Quick Links</h4>
             <div class="item">
               <div class="footer-link">
@@ -576,7 +612,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <h4>About</h4>
             <div class="item">
               <div class="footer-link">
@@ -588,7 +624,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-sm-6">
             <h4>Newsletter</h4>
             <div class="item">
               <div class="footer-input">
@@ -619,7 +655,5 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
-
-  
   </body>
 </html>

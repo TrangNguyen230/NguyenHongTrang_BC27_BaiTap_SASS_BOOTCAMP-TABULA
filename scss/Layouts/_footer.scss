@@ -40,3 +40,27 @@ footer {
     }
   }
 }
+
+// Responsive
+
+@include responsive("extra-large") {
+  footer{
+    padding-top: 90px;
+
+    .col-sm-6{
+      margin-top: 40px;
+
+      span {
+        font-size: $fs-1;
+      }
+    }
+  }
+}
+
+@include responsive("small") {
+  footer{
+    .col-sm-6{
+      margin-left: 10px;
+    }
+  }
+}

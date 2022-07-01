@@ -38,12 +38,36 @@
 
 .register{
     .card{
+   
         border-radius: $round-1;
         border: transparent;
         box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.1);
+
         h4{
             @include styleText($fs-9, $fw-3, $color-black)
         }
     }
    
+}
+
+// Responsive
+@include responsive ("extra-large") {
+    .register {
+        .card {
+            margin-left: 65px;
+        }
+    }
+}
+
+@include responsive("large") {
+    .register{
+        .card{
+            margin-left: 0;
+            width: 100% !important;
+
+            h4{
+                font-size: $fs-11;
+            }
+        }
+    }
 }

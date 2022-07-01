@@ -33,6 +33,10 @@ header button:hover {
   background-color: #fff;
 }
 
+header .btn {
+  border: none !important;
+}
+
 .register button {
   font-size: 0.9rem;
   font-weight: 600;
@@ -120,6 +124,22 @@ footer button:hover {
   font-size: 2.5rem;
   font-weight: 700;
   color: #181818;
+}
+
+@media screen and (max-width: 1200px) {
+  .register .card {
+    margin-left: 65px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .register .card {
+    margin-left: 0;
+    width: 100% !important;
+  }
+  .register .card h4 {
+    font-size: 1.8rem;
+  }
 }
 
 header .dropdown {
@@ -309,7 +329,7 @@ footer .item .footer-brand a:hover i {
 
 .carousel {
   width: 100%;
-  height: 405px;
+  height: 400px;
   background-image: url(./../../img/Violet_top_left_wave.png);
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -349,6 +369,25 @@ footer .item .footer-brand a:hover i {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel .container .content {
+    padding: 0 45px;
+    top: -310px;
+  }
+  .carousel .container .content .row p {
+    font-size: 2.6rem;
+  }
+  .carousel .container .content .carousel-img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .carousel .container .content {
+    top: -350px;
+  }
 }
 
 footer {
@@ -403,6 +442,24 @@ footer .footer-link span:hover {
   color: #e5b2d8;
 }
 
+@media screen and (max-width: 1200px) {
+  footer {
+    padding-top: 90px;
+  }
+  footer .col-sm-6 {
+    margin-top: 40px;
+  }
+  footer .col-sm-6 span {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .col-sm-6 {
+    margin-left: 10px;
+  }
+}
+
 .white-div {
   position: fixed;
   top: 0;
@@ -414,7 +471,7 @@ footer .footer-link span:hover {
 
 header {
   background-image: url(./../../img/yellow_top_wave_01.png);
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 350px;
@@ -437,6 +494,30 @@ header .menu .link {
   margin-left: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+  header {
+    z-index: 1;
+  }
+  header .header-img {
+    font-size: 1.55rem;
+    position: fixed;
+    z-index: 2;
+  }
+  header .header-img img {
+    width: 50px;
+    height: 50px;
+  }
+  header .header-img i {
+    opacity: 1 !important;
+    line-height: 50px;
+    color: #b61984;
+    width: 50px;
+  }
+  header .menu {
+    display: none;
+  }
+}
+
 .info {
   background-color: #dcd1f3;
   background-image: url(./../../img/Wave_White_bottom_right_shape_01.png);
@@ -450,5 +531,11 @@ header .menu .link {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+  .register .item-left img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
